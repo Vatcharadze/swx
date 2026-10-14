@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swx-foldersorter"
+version = "1.0.0"
+description = "An automated file structure organizer by extension rules"
+readme = "README.md"
+authors = [{ name = "Davit" }]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+swx = "swx.main:run_sorter"
