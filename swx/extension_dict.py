@@ -1,3 +1,7 @@
+# You can customize this mapping by adding new file extensions
+# or changing the destination folder for existing extensions.
+# Simply add an extension and its corresponding folder name.
+
 EXTENSION_MAP = {
     '.pdf': 'Documents',
     '.docx': 'Documents',
