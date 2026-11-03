@@ -1,5 +1,5 @@
-from pathlib import Path
 from swx.extension_dict import EXTENSION_MAP
+
 
 def organize_files(file_list, base_directory):
     for file_path in file_list:

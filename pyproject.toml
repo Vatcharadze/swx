@@ -16,3 +16,12 @@ classifiers = [
 
 [project.scripts]
 swx = "swx.main:run_sorter"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
+
+[tool.setuptools.packages.find]
+include = ["swx*"]

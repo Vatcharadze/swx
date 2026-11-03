@@ -1,5 +1,5 @@
 from pathlib import Path
-from swx import config # Imports config.py file
+
 
 def get_files(target_dir: Path):
 

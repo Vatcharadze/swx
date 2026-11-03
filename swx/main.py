@@ -1,5 +1,6 @@
-from swx import config, scan, sort, extension_dict
 import subprocess
+
+from swx import config, scan, sort
 
 
 def run_sorter():
@@ -13,9 +14,9 @@ def run_sorter():
 
         sort.organize_files(files_to_sort, dir_path)
         print("\nSorting complete!")
-        subprocess.run(["ls", dir_path])
-    except Exception as e:
-        print(e)
+        subprocess.run(["ls", str(dir_path)], check=False)
+    except (FileNotFoundError, PermissionError, NotADirectoryError) as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     run_sorter()
